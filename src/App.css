@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-justified {
+  text-align: justify;
+  word-spacing: 1.5px;
+  letter-spacing: 0.7px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.heading p {
+  width: 70%;
+}
+
+.nav-colour {
+  font-weight: 700 !important;
+  color: rgb(93, 91, 91) !important;
+  padding-bottom: 20px !important;
+}
+
+.nav-colour:hover {
+  color: green !important;
+  padding: 15px;
+}
+.nav-colour-content:hover {
+  color: green !important;
+  border-bottom: 5px solid green !important;
+}
+
+.active {
+  color: green !important;
+  border-bottom: 5px solid green !important;
+}
+.card {
+  box-shadow: 0px 0px 10px rgb(93, 91, 91);
+  border-radius: 3px !important;
+ 
+}
+.card img {
+  border-radius: 3px !important;
+}
+.card:hover {
+  box-shadow: 2px 2px 20px rgb(93, 91, 91);
+}
+.card-footer {
+  background-color: white !important;
+  color: grey !important;
+  font-size: 12px;
+}
+.card-body a {
+  font-size: 13px;
+  color: green;
+  font-weight: 700;
+}
+.card-body a:hover {
+  color: green;
+}
+.navbar-toggler{
+  background-color: green !important;
+}
+
+.card-body a::after {
+  content: "»";
+  font-size: 10px;
+  margin: 0px 3px;
+  position: relative;
+  bottom: 1px;
+  font-weight: 900;
+}
+.card-footer span::before {
+  content: ".";
+  font-weight: 900;
+  position: relative;
+  bottom: 3px;
+  margin: 0 7px;
+}
+@media (max-width: 1000px) {
+  .heading p {
+    width: 100%;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .active {
+   
+    border-bottom: none !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-colour-content:hover {
+   
+    border-bottom: none !important;
   }
 }
